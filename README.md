@@ -8,3 +8,9 @@ Lets you **Create** new Recipes and display the info of the recipes.
 and **Add, Delete** ingredients.
 
 ![In a single picture](https://i.imgur.com/b00yhd0.png)
+
+
+In-Coming features:
+
+* Edit Recipe
+* Delete Recipe
