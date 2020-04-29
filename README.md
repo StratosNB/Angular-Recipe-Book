@@ -12,5 +12,5 @@ and **Add, Delete** ingredients.
 
 In-Coming features:
 
-* Edit Recipe
-* Delete Recipe
+** * Edit Recipe
+** * Delete Recipe
