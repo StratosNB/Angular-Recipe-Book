@@ -10,7 +10,7 @@ and **Add, Delete** ingredients.
 ![In a single picture](https://i.imgur.com/b00yhd0.png)
 
 
-In-Coming features:
+**In-Coming features:**
 
-* ** Edit Recipe**
-* ** Delete Recipe**
+* Edit Recipe
+* Delete Recipe
