@@ -1,0 +1,23 @@
+<!-- Add functionality:
+
+App-shopping-edit will listen to the ingredientAdded event, and call onIngredientAdded method
+with the added ingredient as parameter.
+The method will add the new ingredient to the list of ingredients.
+The structural directive *ngFor will iterate trough the list of ingredients and using
+string interpolation will display them. -->
+
+<div class="row">
+  <div class="col-xs-10">
+    <app-shopping-edit (ingredientAdded)="onIngredientAdded($event)"></app-shopping-edit>
+    <hr>
+    <ul class="list-group">
+      <a
+        class="list-group-item"
+        style="cursor: pointer"
+        *ngFor="let ingredient of ingredients"
+      >
+        {{ ingredient.name }} ({{ ingredient.amount }})
+      </a>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<!-- Navigation:
+  
+     The parent component will listen the featureSelected event,
+     which will trigger the onNavigate($event) event.
+     The $event means that the parameter will be the parameter that the featureSelected event
+     has passed tho this component which can be recipe or shopping-list.
+     The method onNavigate will set the current loadedFeature() which can be one of the 2 already
+     mentioned.
+     Using the structural directive *ngIf, we can show only the component we have selected/clicked -->
+<app-header (featureSelected)="onNavigate($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipes *ngIf="loadedFeature === 'recipe'"></app-recipes>
+      <app-shopping-list *ngIf="loadedFeature !== 'recipe'"></app-shopping-list>
+    </div>
+  </div>
+</div>
