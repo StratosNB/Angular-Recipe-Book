@@ -14,7 +14,8 @@ string interpolation will display them. -->
       <a
         class="list-group-item"
         style="cursor: pointer"
-        *ngFor="let ingredient of ingredients"
+        *ngFor="let ingredient of ingredients; let i = index"
+        (click)="onEditItem(i)"
       >
         {{ ingredient.name }} ({{ ingredient.amount }})
       </a>
